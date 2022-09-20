@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/main.css";
 
 interface TituloProps {
   title: string;
@@ -10,9 +11,9 @@ const Titulo: React.FC<TituloProps> = ({ title }) => {
 
 const App: React.FC = () => {
   return (
-    <React.Fragment>
+    <div className="bg-violet-500">
       <Titulo title="Hello World"></Titulo>
-    </React.Fragment>
+    </div>
   );
 };
 
