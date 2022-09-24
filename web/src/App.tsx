@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/main.css";
 import logoSvg from "./assets/Logo.svg";
+import { MagnifyingGlassPlus } from "phosphor-react";
 
 const App: React.FC = () => {
   return (
@@ -23,21 +24,21 @@ const App: React.FC = () => {
             <span className="text-sm text-zinc-300 block">4 anúncios</span>
           </div>
         </a>
-        <a href="" className="relative">
+        <a href="" className="relative rounded-lg overflow-hidden">
           <img src="/image-2.png" alt="" />
           <div className="w-full pt-16 pb-4 px-4 bg-background-title-game-gradient absolute bottom-0 left-0 right-0">
             <strong className="font-bold text-white block">Dota 2</strong>
             <span className="text-sm text-zinc-300 block">4 anúncios</span>
           </div>
         </a>
-        <a href="" className="relative">
+        <a href="" className="relative rounded-lg overflow-hidden">
           <img src="/image-3.png" alt="" />
           <div className="w-full pt-16 pb-4 px-4 bg-background-title-game-gradient absolute bottom-0 left-0 right-0">
             <strong className="font-bold text-white block">CS-GO</strong>
             <span className="text-sm text-zinc-300 block">4 anúncios</span>
           </div>
         </a>
-        <a href="" className="relative">
+        <a href="" className="relative rounded-lg overflow-hidden">
           <img src="/image-4.png" alt="" />
           <div className="w-full pt-16 pb-4 px-4 bg-background-title-game-gradient absolute bottom-0 left-0 right-0">
             <strong className="font-bold text-white block">
@@ -46,20 +47,36 @@ const App: React.FC = () => {
             <span className="text-sm text-zinc-300 block">4 anúncios</span>
           </div>
         </a>
-        <a href="" className="relative">
+        <a href="" className="relative rounded-lg overflow-hidden">
           <img src="/image-5.png" alt="" />
           <div className="w-full pt-16 pb-4 px-4 bg-background-title-game-gradient absolute bottom-0 left-0 right-0">
             <strong className="font-bold text-white block">Apex</strong>
             <span className="text-sm text-zinc-300 block">4 anúncios</span>
           </div>
         </a>
-        <a href="" className="relative">
+        <a href="" className="relative rounded-lg overflow-hidden">
           <img src="/image-6.png" alt="" />
           <div className="w-full pt-16 pb-4 px-4 bg-background-title-game-gradient absolute bottom-0 left-0 right-0">
             <strong className="font-bold text-white block">Fortnite</strong>
             <span className="text-sm text-zinc-300 block">4 anúncios</span>
           </div>
         </a>
+      </div>
+      <div className="pt-1 mt-8 bg-your-duo-gradient self-stretch rounded-lg overflow-hidden">
+        <div className="bg-[#2A2634] px-8 py-6 flex justify-between items-center">
+          <div>
+            <strong className="text-2xl text-white font-black block">
+              Não encontrou seu duo?
+            </strong>
+            <span className="text-zinc-400 block">
+              Publique um anúncio para encontrar novos players!
+            </span>
+          </div>
+          <button className="py-3 px-4 bg-violet-500 hover:bg-violet-600 text-white rounded flex items-center gap-3">
+            <MagnifyingGlassPlus size={24} />
+            Publicar anúncio
+          </button>
+        </div>
       </div>
     </div>
   );
